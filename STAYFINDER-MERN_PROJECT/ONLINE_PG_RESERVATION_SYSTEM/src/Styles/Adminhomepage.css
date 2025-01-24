@@ -1,0 +1,46 @@
+.adminhomepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2c3e50, #fd746c);
+  font-family: Arial, sans-serif;
+}
+
+.adminhomepage .content-wrapper {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.adminhomepage .content-wrapper .routes {
+  margin-top: 20px;
+}
+
+.adminhomepage .content-wrapper .routes .addpg {
+  margin: 20px 0;
+}
+
+.adminhomepage .content-wrapper .routes .addpg h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .adminhomepage .content-wrapper {
+    padding: 15px;
+  }
+
+  .adminhomepage .content-wrapper .routes .addpg h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .adminhomepage .content-wrapper {
+    padding: 10px;
+  }
+
+  .adminhomepage .content-wrapper .routes .addpg h1 {
+    font-size: 1.4rem;
+  }
+}

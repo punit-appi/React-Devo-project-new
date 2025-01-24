@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./SERVER # Path to the backend directory
+      dockerfile: Dockerfile # Dockerfile for the backend
+    ports:
+      - "5000:5000" # Maps port 5000 of the container to port 5000 on the host
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - frontend # (Optional) Ensures the frontend service starts before the backend
+  frontend:
+    build:
+      context: ./ONLINE_PG_RESERVATION_SYSTEM # Path to the frontend directory
+      dockerfile: Dockerfile # Dockerfile for the frontend
+    ports:
+      - "3000:3000" # Maps port 3000 of the container to port 3000 on the host
+    environment:
+      - NODE_ENV=production

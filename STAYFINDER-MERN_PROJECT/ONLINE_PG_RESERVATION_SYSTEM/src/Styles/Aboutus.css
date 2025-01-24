@@ -1,0 +1,179 @@
+
+.about-us {
+  max-width: 900px;
+  margin: 20px auto;
+  margin-top: 150px;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(240, 240, 240, 0.1));
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.about-us h1 {
+  font-size: 2.8rem;
+  color: #e1e4e7;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.about-us img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #4caf50;
+  margin: 20px 0;
+  transition: transform 0.3s;
+}
+
+.about-us img:hover {
+  transform: scale(1.1);
+}
+
+.about-us p {
+  font-size: 1.1rem;
+  color: #3bd85a;
+  line-height: 1.8;
+}
+
+.team-info h2 {
+  font-size: 1.8rem;
+  color: #1abc9c;
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.team-info p {
+  font-size: 1rem;
+  color: #313030;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.team-info strong {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+
+.team-info p strong:contains('HTML') {
+  color: #e44d26;
+}
+
+.team-info p strong:contains('CSS') {
+  color: #2965f1;
+}
+
+.team-info p strong:contains('JavaScript') {
+  color: #f7df1e;
+}
+
+.team-info p strong:contains('React') {
+  color: #61dafb;
+}
+
+.team-info p strong:contains('Node.js') {
+  color: #68a063;
+}
+
+
+.contact-details {
+  margin-top: 40px;
+  
+  text-align: left;
+}
+
+.contact-details h2 {
+  font-size: 1.8rem;
+  color: #3498db;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.contact-details p {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  color: #333;
+  margin: 10px 0;
+}
+
+.contact-details p strong {
+  margin-right: 10px;
+}
+
+.contact-details a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+  color: #1abc9c;
+}
+
+.contact-details img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  padding: 3px;
+  transition: transform 0.3s;
+}
+
+.contact-details img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-us {
+    padding: 15px;
+  }
+
+  .about-us h1 {
+    font-size: 2rem;
+  }
+
+  .about-us img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .team-info p,
+  .contact-details p {
+    font-size: 0.9rem;
+  }
+
+  .contact-details img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us {
+    padding: 10px;
+  }
+
+  .about-us h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-us img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-info p,
+  .contact-details p {
+    font-size: 0.8rem;
+  }
+}
