@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-mongoose.connect("mongodb://localhost:27017/ONLINE_PG_RESERVATION_SYSTEM")
+mongoose.connect("mongodb://43.204.217.205:27017/ONLINE_PG_RESERVATION_SYSTEM")
 // mongoose.connect('mongodb+srv://viratsabari:sabari2020@reservationsystem.xjsaz.mongodb.net/ONLINE_PG_RESERVATION_SYSTEM')
 // mongoose.connect('mongodb+srv://punitg169:nNA2NbW9WzYZqrOz@cluster0.mdayj.mongodb.net/ONLINE_PG_RESERVATION_SYSTEM')
 
